@@ -1,18 +1,18 @@
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps"
-const login = require("../Pages/LoginPage.cy")
+const Login = require("../Pages/LoginPage.cy")
 
 Given("I navigate to the Website", () => {
-login.enterURL();
+    Login.enterURL();
 });
 
-When("I entered valid credential", () => {
-login.test("TEST")
+When("I click on Log in button", () => {
+    Login.clickLogInButton();
 });
 
-And("User click on sign in button", () => {
-    login.test("TEST")
+And("I log in with user {string} and password {string}", (username,password) => {
+    Login.enterUsernameAndPassword(username,password)
 });
 
-Then("Validate the title after login", () => {
-    login.test("TEST")
+Then("Validate the success log in", () => {
+    Login.checkLoginSuccess();
 });
