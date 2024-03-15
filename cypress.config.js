@@ -7,5 +7,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on("file:preprocessor", cucumber());
     },
+    testIsolation: false,
   },
 });
