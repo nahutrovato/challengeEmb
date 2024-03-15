@@ -1,7 +1,7 @@
 class LoginPage {
   title = 'Space & Beyond | Testim.io demo';
   
-  enterURL() {
+  enterHome() {
     cy.visit("/");
     cy.title().should('eq', this.title);
   };
