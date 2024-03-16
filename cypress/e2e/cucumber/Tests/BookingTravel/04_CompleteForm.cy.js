@@ -1,5 +1,5 @@
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
-const Form = require('../../../Pages/Form/FormPage.cy');
+const Form = require('../../Pages/Form/FormPage.cy');
 
 Given("I am on the checkout page", () => {
     Form.verifyCheckOutForm();

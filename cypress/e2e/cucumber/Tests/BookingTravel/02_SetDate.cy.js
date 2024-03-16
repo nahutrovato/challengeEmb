@@ -1,6 +1,6 @@
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
-const Login = require("../../../Pages/Login/LoginPage.cy");
-const FlightDatePicker = require("../../../Pages/Home/FlightDatePickerPage.cy");
+const Login = require("../../Pages/Login/LoginPage.cy");
+const FlightDatePicker = require("../../Pages/Home/FlightDatePickerPage.cy");
 
 Given("a user is on the travel booking page", () => {
     Login.checkLoginSuccess();

@@ -1,5 +1,5 @@
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
-const NextDestination = require('../../../Pages/Home/NextDestionationPage.cy');
+const NextDestination = require('../../Pages/Home/NextDestionationPage.cy');
 
 Given("Im in your next destination section", () => {
     NextDestination.checkNextDestinationTitle();
