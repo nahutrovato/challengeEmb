@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Select next destination information",
+    "line": 1,
+    "id": "select-next-destination-information",
+    "tags": [],
+    "uri": "03_setNextDestination.feature",
+    "elements": [
+      {
+        "id": "select-next-destination-information;select-the-information-for-the-travel",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Select the information for the travel",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Im in your next destination section",
+            "result": {
+              "status": "passed",
+              "duration": 6437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "check the correct mount of passengers",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I select the launch and color of the planet",
+            "result": {
+              "status": "passed",
+              "duration": 900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "verify the date travel and complete the booking",
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

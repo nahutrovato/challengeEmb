@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Booking a travel date",
+    "line": 1,
+    "id": "booking-a-travel-date",
+    "tags": [],
+    "uri": "02_SetDate.feature",
+    "elements": [
+      {
+        "id": "booking-a-travel-date;select-travel-date",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Select travel date",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user is on the travel booking page",
+            "result": {
+              "status": "passed",
+              "duration": 4036000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user selects the departure date",
+            "result": {
+              "status": "passed",
+              "duration": 771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "select the date of returning",
+            "result": {
+              "status": "passed",
+              "duration": 731000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "set the number of passengers to travel",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the selected departure date should be displayed in the booking form",
+            "result": {
+              "status": "passed",
+              "duration": 166000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

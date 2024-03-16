@@ -1,0 +1,286 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "I want to book a travel for three people",
+    "line": 1,
+    "id": "i-want-to-book-a-travel-for-three-people",
+    "tags": [],
+    "uri": "01_LoginTest.feature",
+    "elements": [
+      {
+        "id": "i-want-to-book-a-travel-for-three-people;login-as-new-sign-up-user-with-valid-data",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login as new sign up user with valid data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 2271000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I click on Log in button",
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I log in with valid credentials username and password",
+            "result": {
+              "status": "passed",
+              "duration": 1315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Validate the success log in",
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          }
+        ],
+        "retried": null
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Booking a travel date",
+    "line": 1,
+    "id": "booking-a-travel-date",
+    "tags": [],
+    "uri": "02_SetDate.feature",
+    "elements": [
+      {
+        "id": "booking-a-travel-date;select-travel-date",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Select travel date",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user is on the travel booking page",
+            "result": {
+              "status": "passed",
+              "duration": 4036000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user selects the departure date",
+            "result": {
+              "status": "passed",
+              "duration": 771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "select the date of returning",
+            "result": {
+              "status": "passed",
+              "duration": 731000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "set the number of passengers to travel",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the selected departure date should be displayed in the booking form",
+            "result": {
+              "status": "passed",
+              "duration": 166000000
+            }
+          }
+        ],
+        "retried": null
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Select next destination information",
+    "line": 1,
+    "id": "select-next-destination-information",
+    "tags": [],
+    "uri": "03_setNextDestination.feature",
+    "elements": [
+      {
+        "id": "select-next-destination-information;select-the-information-for-the-travel",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Select the information for the travel",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Im in your next destination section",
+            "result": {
+              "status": "passed",
+              "duration": 6437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "check the correct mount of passengers",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I select the launch and color of the planet",
+            "result": {
+              "status": "passed",
+              "duration": 900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "verify the date travel and complete the booking",
+            "result": {
+              "status": "passed",
+              "duration": 253000000
+            }
+          }
+        ],
+        "retried": null
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Checkout process",
+    "line": 1,
+    "id": "checkout-process",
+    "tags": [],
+    "uri": "04_CompleteForm.feature",
+    "elements": [
+      {
+        "id": "checkout-process;completing-the-checkout-process-with-valid-information",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Completing the checkout process with valid information",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the checkout page",
+            "result": {
+              "status": "passed",
+              "duration": 7756000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "check the correct orden summary",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I fill out the checkout form with valid information",
+            "result": {
+              "status": "passed",
+              "duration": 1834000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "enter a valid discount code and apply",
+            "result": {
+              "status": "passed",
+              "duration": 620000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on Pay Now button without accepting the terms and conditions",
+            "result": {
+              "status": "passed",
+              "duration": 126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should see a pop-up error message",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Close the modal, acept the terms and condition I can finish the pay",
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          }
+        ],
+        "retried": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Checkout process",
+    "line": 1,
+    "id": "checkout-process",
+    "tags": [],
+    "uri": "04_CompleteForm.feature",
+    "elements": [
+      {
+        "id": "checkout-process;completing-the-checkout-process-with-valid-information",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Completing the checkout process with valid information",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the checkout page",
+            "result": {
+              "status": "passed",
+              "duration": 7756000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "check the correct orden summary",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I fill out the checkout form with valid information",
+            "result": {
+              "status": "passed",
+              "duration": 1834000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "enter a valid discount code and apply",
+            "result": {
+              "status": "passed",
+              "duration": 620000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on Pay Now button without accepting the terms and conditions",
+            "result": {
+              "status": "passed",
+              "duration": 126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should see a pop-up error message",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Close the modal, acept the terms and condition I can finish the pay",
+            "result": {
+              "status": "passed",
+              "duration": 390000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
