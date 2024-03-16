@@ -1,6 +1,6 @@
 import { dateTravel } from '../../../../support/commands';
 class FormPage {
-    urlCheckOut = 'https://demo.testim.io/checkout';
+    urlCheckOut = '/checkout';
 
     inputs = {
         input: (type) =>  cy.get(`input[placeholder="${type}"]`),
@@ -8,7 +8,7 @@ class FormPage {
     };
 
     verifyCheckOutForm(){
-        cy.url(this.urlCheckOut);
+        cy.url('/').should('contain',this.urlCheckOut);
         cy.get('h2.Checkout__headline-1___2KQaR').should('contain', 'Checkout');
     };
 
@@ -43,7 +43,7 @@ class FormPage {
         cy.fixture('HealthInsurance.jpg').then(fileContent => {
             cy.get('input[type="file"][multiple]').attachFile({
               fileContent: fileContent.toString(),
-              fileName: 'nombre_archivo.jpg',
+              fileName: 'HealthInsurance.jpg',
               mimeType: 'image/jpeg'
             });
         });
