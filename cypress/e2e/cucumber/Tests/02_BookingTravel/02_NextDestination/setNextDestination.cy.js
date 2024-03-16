@@ -6,17 +6,14 @@ Given("Im in your next destination section", () => {
 });
 
 And("check the correct mount of passengers", () => {
-    cy.fixture('dataTravel.json').then((data)=> {
-        NextDestination.checkPassengerCount(data.adultsPassengers+data.childrenPassengers);
-    });
+    NextDestination.checkPassengerCount();
 });
 
 When("I select the launch and color of the planet", () => {
-    cy.fixture('dataTravel.json').then((data)=> {
-        NextDestination.selectLaunchPlanet(data.launchPlanet,data.colorPlanet);
-    });
+    NextDestination.selectLaunchPlanet();
 });
 
-Then("complete the booking", () => {
+Then("verify the date travel and complete the booking", () => {
+    NextDestination.getDateTravel();
     NextDestination.clickBookButton();
 });

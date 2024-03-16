@@ -7,6 +7,20 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
+import 'cypress-file-upload';
+let dateTravel;
+Cypress.Commands.add('getDateTravel', () => {
+    cy.get('h3.Gallery__headline-2___3amRj')
+        .invoke('text')
+        .then((text) => {
+            const match = text.match(/, (.+)/); 
+            dateTravel = match ? match[1].replace(',', '') : null;
+        });
+});
+export { dateTravel };
+Cypress.Commands.add('getDateTravelValue', () => {
+    return dateTravel;
+});
 //
 //
 // -- This is a parent command --

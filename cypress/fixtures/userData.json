@@ -1,6 +1,9 @@
 {
     "name": "John",
-    "lastname": "Test",
     "email": "testJohn@test.com",
-    "password": "thisTest"
+    "securitySocialNumber": "123-45-6563",
+    "phone": 3410011223,
+    "lastname": "Test",
+    "password": "thisTest",
+    "promotionCode": 123456789
 }

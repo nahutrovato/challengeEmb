@@ -7,21 +7,15 @@ Given("a user is on the travel booking page", () => {
 });
 
 When("the user selects the departure date", () => {
-    cy.fixture('dataTravel.json').then((data) => {
-        FlightDatePicker.setDepartingDatePicker(data.departureDate);
-    });
+    FlightDatePicker.setDepartingDatePicker();
 });
 
 And("select the date of returning", () => {
-    cy.fixture('dataTravel.json').then((data) => {
-        FlightDatePicker.setReturningDatePicker(data.returningDate);
-    });
+    FlightDatePicker.setReturningDatePicker();
 });
 
 And("set the number of passengers to travel", () => {
-    cy.fixture('dataTravel.json').then((data) => {
-        FlightDatePicker.setPassengers(data.adultsPassengers,data.childrenPassengers);
-    });
+    FlightDatePicker.setPassengers();
 });
 
 Then("the selected departure date should be displayed in the booking form", () => {

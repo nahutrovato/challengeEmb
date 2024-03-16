@@ -10,10 +10,13 @@ class LoginPage {
     cy.contains('Log in').should('be.visible').click();
   };
 
-  enterUsernameAndPassword(username,password){
-    cy.get('form[id="login"] input').eq(0).type(username);
-    cy.get('input[type="password"]').type(password);
-    cy.get('button[type="submit"]').click();
+  enterUsernameAndPassword(){
+    cy.fixture('userData.json').then((data) => {
+      cy.get('form[id="login"] input').eq(0).type(data.email);
+      cy.get('input[type="password"]').type(data.password);
+      cy.get('button[type="submit"]').click();
+    });
+   
   };
   
   checkLoginSuccess(){
